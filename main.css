@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .header {
@@ -95,4 +96,58 @@
   background: #41f6d7;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.navigation {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  overflow-x: scroll;
+}
+
+.menu {
+  display: flex;
+}
+
+/* хром, сафари */
+.navigation::-webkit-scrollbar {
+  width: 0;
+}
+
+/* ie 10+ */
+.navigation {
+  -ms-overflow-style: none;
+}
+
+.menu__item {
+  font-family: "TT Lakes";
+  font-size: 16px;
+  white-space: nowrap;
+  border: 2px solid transparent;
+}
+
+.menu__link {
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  color: #1b1c21;
+}
+
+.menu__item--active:active {
+  background: #ffffff;
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+}
+
+.menu__item--active:hover {
+  background: #ffffff;
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+}
+
+.menu__item--permanent-active {
+  background: #ffffff;
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
 }
