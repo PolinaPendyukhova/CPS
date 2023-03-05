@@ -14,19 +14,49 @@
     <div class="wrapper">
       <header class="header">
         <button
-          class="header__button header__button--left header__button--burger header__button--icon"
+          class="header__button header__button--left header__button--burger header__button--icon header__button--right-extra"
         ></button>
         <img class="header__logo" src="./images/svg/logo.svg" />
+
+        <div class="tablet">
+          <button
+            class="header__button header__button--phone header__button--icon header__button--right"
+          ></button>
+
+          <button
+            class="header__button header__button--message header__button--icon header__button--right"
+          ></button>
+
+          <button
+            class="header__button header__button--person header__button--icon header__button--right"
+          ></button>
+        </div>
+
         <button
           class="header__button header__button--divider header__button--right header__button--tools header__button--icon"
         ></button>
+
         <button
-          class="header__button header__button--right header__button--search header__button--icon"
+          class="header__button header__button--search header__button--icon header__button--right-last"
         ></button>
       </header>
 
       <main class="main">
-        <h1 class="heading heading--highlight">Услуги и сервисы</h1>
+        <div class="heading-container">
+          <h1 class="heading heading--highlight">Услуги и сервисы</h1>
+
+          <div class="heading-right">
+            <span class="heading-right__text">Оставить заявку </span>
+            <button
+              class="heading-right__button heading-right__button--tools heading-right__button--icon"
+            ></button>
+
+            <span class="heading-right__text">Статус ремонта </span>
+            <button
+              class="heading-right__button heading-right__button--search heading-right__button--icon"
+            ></button>
+          </div>
+        </div>
         <nav class="navigation">
           <ul class="menu">
             <li
@@ -49,11 +79,32 @@
             <li class="menu__item menu__item--active">
               <a href="#" class="menu__link">Отзывы </a>
             </li>
-            <li class="menu__item menu__item--active">
-              <a href="#" class="menu__link">Контакты </a>
-            </li>
           </ul>
         </nav>
+
+        <section class="about-us">
+          <div class="about-us-content">
+            <div class="text-content">
+              <p class="about-us__text">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </p>
+              <p class="about-us__text-second">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера
+                <span class="about-us__text-extension"
+                  >,что подтверждает большое количество постоянных клиентов. Мы
+                  гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                  очередь, советуют нас родным и близким.</span
+                >
+              </p>
+            </div>
+            <p class="about-us__button about-us__button--icon">Читать далее</p>
+          </div>
+
+          <img class="about-us__picture" src="/images/jpg/1120.jpg" alt="a" />
+        </section>
       </main>
     </div>
   </body>
